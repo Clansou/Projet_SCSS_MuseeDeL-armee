@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+@for $i from 1 through 3{
+    .padding_y-#{$i}{
+        padding-top: 20px * $i;
+        padding-bottom: 20px * $i;
+    }
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    div{
+        margin-left: 10px;
+        height: 10vh;
+        display: grid;
+        grid-template-columns: 15vw 75vw;
+        .image {
+            img{
+                width: auto;
+                max-height: 8vh;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+        }
+        nav{
+            div{
+                margin-left: auto;
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                align-items: center;
+                li{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    
+}
