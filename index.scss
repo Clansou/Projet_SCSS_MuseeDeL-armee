@@ -85,6 +85,12 @@ header{
         width: 8px;
         margin: 0 auto;
         background: #898989;
+        @include mixins.breakpoint(1000px){
+            margin-left: 80vw;
+        }
+        @include mixins.breakpoint(700px){
+            display: none;
+        }
     }
     
     .trigger {
@@ -99,10 +105,16 @@ header{
         justify-content: center;
         align-items: center;
         font-size: 40px;
+        @include mixins.breakpoint(1000px){
+            left: 80vw;
+        }
+        @include mixins.breakpoint(700px){
+            display: none;
+        }
     }
 
 
-    .t1{top: 80px;}
+    .t1{top: 70px;}
     .t2{top: 600px;}
     .t3{top: 1300px;}
     
@@ -116,6 +128,12 @@ header{
         position: absolute;
         left: 50%;
         transform: translate(-50%);
+        @include mixins.breakpoint(1000px){
+            width: 40%;
+        }
+        @include mixins.breakpoint(700px){
+            width: 70%;
+        }
         div{
             text-align: center;
             img{
@@ -144,6 +162,29 @@ header{
         top: 1300px;
         left: 50%;
     }
+    @include mixins.breakpoint(1000px){
+        .b1{
+            left: 40%
+        }
+        .b2{
+            left: 40%
+        }
+        .b3{
+            left: 40%
+        }
+    }
+    @include mixins.breakpoint(700px){
+        .b1{
+            left: 50%
+        }
+        .b2{
+            left: 50%
+        }
+        .b3{
+            left: 50%
+        }
+    }
+    
     
 }
 #projets{

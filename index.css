@@ -88,6 +88,16 @@ header div nav div a {
   margin: 0 auto;
   background: #898989;
 }
+@media screen and (max-width: 1000px) {
+  #timeline .line {
+    margin-left: 80vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  #timeline .line {
+    display: none;
+  }
+}
 #timeline .trigger {
   width: 80px;
   height: 80px;
@@ -101,8 +111,18 @@ header div nav div a {
   align-items: center;
   font-size: 40px;
 }
+@media screen and (max-width: 1000px) {
+  #timeline .trigger {
+    left: 80vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  #timeline .trigger {
+    display: none;
+  }
+}
 #timeline .t1 {
-  top: 80px;
+  top: 70px;
 }
 #timeline .t2 {
   top: 600px;
@@ -120,6 +140,16 @@ header div nav div a {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
+}
+@media screen and (max-width: 1000px) {
+  #timeline .box {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #timeline .box {
+    width: 70%;
+  }
 }
 #timeline .box div {
   text-align: center;
@@ -145,6 +175,28 @@ header div nav div a {
 #timeline .b3 {
   top: 1300px;
   left: 50%;
+}
+@media screen and (max-width: 1000px) {
+  #timeline .b1 {
+    left: 40%;
+  }
+  #timeline .b2 {
+    left: 40%;
+  }
+  #timeline .b3 {
+    left: 40%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #timeline .b1 {
+    left: 50%;
+  }
+  #timeline .b2 {
+    left: 50%;
+  }
+  #timeline .b3 {
+    left: 50%;
+  }
 }
 
 #projets {
