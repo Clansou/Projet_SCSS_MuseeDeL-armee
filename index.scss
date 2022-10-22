@@ -4,25 +4,21 @@
     box-sizing: border-box;
   }
 
-@for $i from 1 through 3{
-    .padding_y-#{$i}{
-        padding-top: 20px * $i;
-        padding-bottom: 20px * $i;
-    }
-}
+
 body{
     width: 100%;
     height: 100%;
 }
 header{
-    position: absolute;
+    position: fixed;
     height: 10vh;
     width: 100%;
+    z-index: 1;
     div{
         margin-left: 10px;
         height: 10vh;
         display: grid;
-        grid-template-columns: 15vw 75vw;
+        grid-template-columns: 15vw 85vw;
         .image {
             img{
                 width: auto;
@@ -34,14 +30,17 @@ header{
         nav{
             div{
                 margin-left: auto;
-                width: 50%;
+                margin-right: 20px;
+                width: 25%;
                 height: 100%;
                 display: flex;
                 justify-content: space-around;
                 list-style: none;
                 align-items: center;
-                li{
+                a{
                     font-size: 20px;
+                    text-decoration: none;
+                    color: black;
                 }
             }
         }
