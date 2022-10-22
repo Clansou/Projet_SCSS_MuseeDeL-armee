@@ -127,4 +127,24 @@ header div nav div a {
   left: 50%;
 }
 
+#projets {
+  margin-left: auto;
+  margin-right: auto;
+  border-top: black 2px solid;
+  width: 60%;
+  height: auto;
+  text-align: justify;
+  border-bottom: black 2px solid;
+}
+#projets h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 50px 0;
+}
+#projets p {
+  margin: 30px auto;
+  width: 80%;
+  font-size: 20px;
+}
+
 /*# sourceMappingURL=index.css.map */
