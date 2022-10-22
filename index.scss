@@ -194,6 +194,11 @@ header{
     height: auto;
     text-align: justify;
     border-bottom: black 2px solid;
+    @include mixins.breakpoint(1000px){
+        width: 80%;
+        border-bottom: 0;
+        border-top: 0;
+    }
     h2{
         font-size: 30px;
         text-align:center;
@@ -203,7 +208,11 @@ header{
         margin: 30px auto;
         width: 80%;
         font-size: 20px;
+        @include mixins.breakpoint(1000px){
+            font-size: 16px;
+        }
     }
+    
 }
 #collection{
     margin-top: 50px;

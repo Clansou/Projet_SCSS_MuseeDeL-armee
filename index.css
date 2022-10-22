@@ -208,6 +208,13 @@ header div nav div a {
   text-align: justify;
   border-bottom: black 2px solid;
 }
+@media screen and (max-width: 1000px) {
+  #projets {
+    width: 80%;
+    border-bottom: 0;
+    border-top: 0;
+  }
+}
 #projets h2 {
   font-size: 30px;
   text-align: center;
@@ -217,6 +224,11 @@ header div nav div a {
   margin: 30px auto;
   width: 80%;
   font-size: 20px;
+}
+@media screen and (max-width: 1000px) {
+  #projets p {
+    font-size: 16px;
+  }
 }
 
 #collection {
