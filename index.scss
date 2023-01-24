@@ -101,6 +101,8 @@ header{
         height: 1300px;
         width: 8px;
         margin: 0 auto;
+        position: relative;
+        z-index: -2;
         background:#153958bd;
         @include mixins.breakpoint(1000px){
             margin-left: 80vw;
@@ -116,7 +118,7 @@ header{
         border-radius: 50%;
         background: #1b1b1b;
         position: absolute;
-        z-index: 2;
+        z-index: -1;
         left: 50%;
         transform: translate(-50%);
         display: flex;
